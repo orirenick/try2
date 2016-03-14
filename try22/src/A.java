@@ -2,6 +2,12 @@
 
 public class A {
 
+	public static int Factorial(int n){
+		if(n==1)return 1;
+		
+		return n*Factorial(n-1);
+	}
+	
 	public static String Rec1(int n){
 		if(n == 0)return Integer.toString(n);
 		else return Integer.toString(n) + Rec1(n-1);
